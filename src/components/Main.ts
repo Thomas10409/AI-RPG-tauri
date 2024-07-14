@@ -35,4 +35,18 @@ async function run(history:Array<any>) {
     return completion
 }
 
-export default {run}
+async function vertify_run(inp:string){
+    let prompt = new Array();
+    prompt.push({"role":"system","content":prompts.vertify_prompt})
+    prompt.push({"role":"user","content":inp})
+    const completion = await api.chat.completions.create({ 
+        messages: prompt,
+        model: "meta-llama/Meta-Llama-3-8B-Instruct",
+        temperature: 0,
+        max_tokens:1,
+        top_p:0.9,
+    })
+    return completion
+}
+
+export { run , vertify_run }

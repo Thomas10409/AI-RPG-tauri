@@ -3,13 +3,13 @@
 
 //遊戲匯入 import for game
 import { ref } from 'vue'
-import API from './components/Main.ts'
+import * as API from './components/Main.ts'
 import { langList , get} from './assets/lang.ts'
 import { VueMarkdownRender } from 'vue-markdown-viewer';
 
 let currentLang = langList[0]
 let playerName = new String()
-const lang = get(currentLang)
+const lang = get(currentLang).game
 const inp_t = ref()
 var historys = ref(new Array())
 playerName = "Thomas104019"

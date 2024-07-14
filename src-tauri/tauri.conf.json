@@ -27,7 +27,10 @@
       {
         "title": "AI-RPG | 由AI驅動的RPG遊戲(Beta)",
         "width": 1280,
-        "height": 900
+        "height": 720,
+        "resizable": false,
+        "fullscreen": false,
+        "center": true
       }
     ],
     "security": {
