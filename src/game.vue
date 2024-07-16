@@ -81,7 +81,7 @@ div{
     color: white;
 }
 
-div #game{
+div#game{
     height: 70svh;
     width: 90%;
     margin-left: 5%;
@@ -92,20 +92,20 @@ div #game{
     border-radius: 10px;
 }
 
-div #sidebar{
+div#sidebar{
     width: 30svw;
 }
 
-div #chat{
+div#chat{
     display: block;
     width: 60svw;
 }
 
-div #msg{
+div#msg{
     display: block;
 }
 
-div #content{
+div#content{
     overflow-y: auto;
     font-size: 1.5svh;
     text-align: left;
@@ -115,13 +115,13 @@ div #content{
     min-height: 50svh;
 }
 
-div #inp{
+div#inp{
     margin: 1svh 1svh;
     max-height: 5svh;
     min-height: 5svh;
     display: flex;
 }
-div #msg_inp{
+div#msg_inp{
     color: white;
     resize: none;
     width: 90%;
@@ -132,7 +132,7 @@ div #msg_inp{
     border-bottom-left-radius: 10px;
 }
 
-div .user{
+div.user{
     color: black;
     padding: 1svh;
     margin: 1%;
@@ -141,13 +141,13 @@ div .user{
     border-radius: 1svh;
 }
 
-div .user-context{
+div.user-context{
     color: black;
     text-align: right;
     padding-right: 1svw
 }
 
-div .assistant{
+div.assistant{
     color: black;
     padding: 1svh;
     margin: 1%;
@@ -156,12 +156,12 @@ div .assistant{
     border-radius: 1svh;
 }
 
-div .assistant-context{
+div.assistant-context{
     color: black;
     padding-left: 1svw;
 }
 
-div #send_btn{
+div#send_btn{
     background-color: white;
     margin-right: 1%;
     border: solid 1px white;
@@ -169,12 +169,12 @@ div #send_btn{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
-div #send_btn:hover{
+div#send_btn:hover{
     background-color: rgba(200,200,200);
     border: solid 1px rgba(200,200,200);
     border-left: none;
 }
-div #send_btn:active{
+div#send_btn:active{
     background-color: rgba(100,100,100);
     border: solid 1px rgba(100,100,100);
     border-left: none;

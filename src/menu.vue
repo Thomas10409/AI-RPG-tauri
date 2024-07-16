@@ -12,7 +12,7 @@ import { ref } from 'vue'
             <p id="title-main">AI RPG</p>
             <p id="title-description">一款用AI驅動的文字RPG</p>
         </div>
-        <div style="width:0px;height:50svh;border-right: 5px solid rgba(255,255,255,0.8);margin: 0px 4svw;"></div>
+        <div style="width:0px;height:40svh;border-right: 0.5svw solid rgba(255,255,255,0.8);border-radius:0.25svw;margin: 5svh 2.25svw;"></div>
         <div id="menu-choice">
             <div class="menu-choice">
                 <p>新遊戲</p>
@@ -27,20 +27,21 @@ import { ref } from 'vue'
                 <p>離開遊戲</p>
             </div>
         </div>
+        <div style="width:0px;height:40svh;border-right: 0.5svw solid rgba(255,255,255,0.8);border-radius:0.25svw;margin: 5svh 2.25svw;"></div>
     </div>
 </template>
 
 <style>
 div#menu{
+    user-select:none;
     width: 100%;
     display: flex;
     height: 50svh;
     text-align: left;
-    margin: 25svh none;
+    margin: 25svh 0px;
 }
 div#menu div#menu-title{
-    width: 27svw;
-    
+    width: 25svw;
 }
 div#menu #title-main{
     font-size: 11.8svh;  
@@ -56,28 +57,25 @@ div#menu #title-description{
 div#menu-choice{
     text-align: center;
     display: block;
-    height: 40svh;
-    width: 50svw;
-    margin: 5svh none;
+    height: 50svh;
+    width: 45svw;
 }
 
 div#menu-choice div.menu-choice{
     z-index: 1;
-    width:50%;
-    height: 8svh;
-    margin: 1svh 10%;
-    margin-bottom: none;
-    padding: 2.5svh none;
+    width:80%;
+    margin: 0 10% 1%;
+    height: fit-content;
+    padding: 0.5svh 0;
     font-weight: 1000;
-    font-size: 3svh;
-    /*background-color: rgba(0,0,0,0.4);*/
+    font-size: 1.55rem;
     border-radius: 0.5svh;
-    transition: 500ms;
+    transition: 800ms;
 }
 
 div#menu-choice div.menu-choice:hover{
-    background-color: rgba(0,0,0,0.05);
-    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.1);
+    backdrop-filter: blur(2.5px);
 }
 
 </style>
